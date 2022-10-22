@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 :root {
-	--line-border-fill: #129af4d7;
+	--line-border-fill: #f41212d7;
 	--line-border-empty: #c3b3b3;
 }
 
@@ -9,7 +9,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #fff;
+	background-color: rgb(129, 151, 207);
 	font-family: "Muli", sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -19,6 +19,19 @@ body {
 	overflow: hidden;
 	margin: 0;
 }
+
+h1 {
+	position: absolute;
+	top: 30px;
+	left: 45%;
+	transition: 0.5s ease-in-out;
+}
+
+h1:hover {
+	color: fuchsia;
+	transform: scale(1.5);
+}
+
 .container {
 	text-align: center;
 }
@@ -33,7 +46,7 @@ body {
 
 .progress-container::after {
 	content: "";
-	background-color:var(--line-border-empty);
+	background-color: var(--line-border-empty);
 	position: absolute;
 	top: 50%;
 	left: 0%;
@@ -84,8 +97,14 @@ body {
 .btn:active {
 	transform: scale(0.98);
 }
+
 .btn:focus {
 	outline: none;
+}
+
+.btn:hover {
+	background-color: rgb(202, 45, 45);
+	transform: translateY(-2px);
 }
 
 .btn:disabled {
